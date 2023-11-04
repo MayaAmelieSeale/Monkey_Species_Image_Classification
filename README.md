@@ -13,4 +13,16 @@ This approach relied utilized MobileNetV2 as a pre-trained model, which was kept
 
  ## Log of Iterations 
 
+
+| Iteration       | # Layers           | Activation Function  | Train Accuracy (%) | Test Accuracy (%)
+| ------------- |:-------------:| -----:| -----: | ------ | 
+| 1      | 7 | softmax | 95.59 | 94.99
+| 2     | 7 | softmax | 98.58 | 96.66
+| 3      | 7 | ReLU | 100 | 98.33
+| 4      | 7 | Leaky ReLU | 100 | 96.67
+| 5      | 7 | Thresholded ReLU (Theta = 1) | 100 | 98.33
+| 6      | 7 | Thresholded ReLU (Theta = 5) | 100 | 98.33
+| 7      | 7 | Thresholded ReLU (Theta = .1) | 100 | 98.33
+| 8      | 7 | Thresholded ReLU (Theta = .5) | 100 | 98.33
+
 <img width="615" alt="Screenshot 2023-07-29 at 6 07 53 PM" src="https://github.com/MayaAmelieSeale/Monkey_Species_Image_Classification/assets/140470683/b5b62a81-54b8-4de1-8166-d9bb7f0d7c55">
