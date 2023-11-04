@@ -25,4 +25,4 @@ This approach relied utilized MobileNetV2 as a pre-trained model, which was kept
 | 7      | 7 | Thresholded ReLU (Theta = .1) | 100 | 98.33
 | 8      | 7 | Thresholded ReLU (Theta = .5) | 100 | 98.33
 
-<img width="615" alt="Screenshot 2023-07-29 at 6 07 53 PM" src="https://github.com/MayaAmelieSeale/Monkey_Species_Image_Classification/assets/140470683/b5b62a81-54b8-4de1-8166-d9bb7f0d7c55">
+
