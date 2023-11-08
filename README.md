@@ -121,6 +121,7 @@ F1 Score : 1.0
 
    ### EfficientNet-B7 
    Introduced by Tan et al. in EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks
+   
    The EfficientNet family derives it's advantage over other ConvNets like MobileNetV3 from a new scaling method that uniformly scales all dimensions of depth/width/resolution using a simple yet highly effective compound coefficient. 
    Out of all of the members of the EfficientNet family, B7 has achieved the best performance. The best classifier depends on the application, as some may be faster while compromising accuracy. Here is a comparison based on performance on ImageNet from Tan et al: 
    
@@ -193,7 +194,7 @@ F1 Score by class
 
 <img width="338" alt="Screenshot 2023-11-07 at 11 54 33 PM" src="https://github.com/MayaAmelieSeale/Monkey_Species_Image_Classification/assets/140470683/631e81c6-a799-44b4-81c3-168717149acd">
 
-This model currently has very low performance. This coould be due to the small dataset, as ViTs typically perform best at the size of tens of thousands of images. However, I will nonetheless attempt to improve ViT's perfomance here in the future. 
+This model currently has very low performance. This could be due to the small dataset, as ViTs typically perform best at the size of tens of thousands of images. However, I will nonetheless attempt to improve ViT's perfomance here in the future. 
 
 
 
