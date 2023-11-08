@@ -36,6 +36,18 @@ The dataset is fairly balanced, meaning accuracy is a good metric
 
 ![download (7)](https://github.com/MayaAmelieSeale/Monkey_Species_Image_Classification/assets/140470683/a384c341-74ba-4dcb-bf7c-92c0df238869)
 
+## Model Summary
+Eval time refers to the time taken to make and evaluate predictions on the test datatset
+
+| Model              |  Finetuned? | Train Accuracy (%)  |  Test Accuracy (%) | F1 Score (Test) | Eval Time 
+|-------------|-------------| ------ | 
+| MobileNetV2       |     126 |
+| MobileNetV2       |     126 |
+| MobileNetV3    |     135 |
+| MobileNetV3    |     135 |
+| EfficientNet   |     No |
+| EfficientNet   |     Yes |
+| Vision Transformer | N/A | 
 
 ## Approaches
 
@@ -46,6 +58,7 @@ All models used SparseCategoricalCrossentropy as a loss function, which was dete
    a. MobileNetv2 - With and without finetuning
    
    b. EfficientNet - With and without finetuning
+
 3. Vision Transformer
 
 
@@ -57,21 +70,44 @@ All models used SparseCategoricalCrossentropy as a loss function, which was dete
 
 
    
-   #### Example of results 
+  
    
    ### EfficientNet-B7 
    Introduced by Tan et al. in EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks
-   The EfficientNet family derives it's advantage over other ConvNets like MobileNetV3 from a new scaling method that uniformly scales all dimensions of depth/width/resolution using a simple yet highly effective compound coefficien. 
-   #### Fine Tuning 
+   The EfficientNet family derives it's advantage over other ConvNets like MobileNetV3 from a new scaling method that uniformly scales all dimensions of depth/width/resolution using a simple yet highly effective compound coefficient. 
+   ### History Plot
+   <img width="747" alt="Screenshot 2023-11-07 at 10 55 41 PM" src="https://github.com/MayaAmelieSeale/Monkey_Species_Image_Classification/assets/140470683/24a2f01d-fc5a-4172-907d-bc09d572581a">
+   
+Test accuracy : 1.0
 
- 
+F1 Score : 1.0
+
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00         2
+           1       1.00      1.00      1.00         4
+           2       1.00      1.00      1.00         2
+           3       1.00      1.00      1.00         5
+           4       1.00      1.00      1.00         2
+           5       1.00      1.00      1.00         5
+           7       1.00      1.00      1.00         3
+           8       1.00      1.00      1.00         4
+           9       1.00      1.00      1.00         3
+
+    accuracy                           1.00        30
+   macro avg       1.00      1.00      1.00        30
+weighted avg       1.00      1.00      1.00        30
+
+ A test accuracy of 100% and an F1  score of 1.0 indicate a model that is performing extremely well 
 
 
 
 
 ## History Plots
-### First iteration, without fine-tuning the pre-trained model:<img width="437" alt="Screenshot 2023-07-29 at 6 05 31 PM" src="https://github.com/MayaAmelieSeale/Monkey_Species_Image_Classification/assets/140470683/a2c03b9c-f5c9-417f-be41-774744881dfc">
-### After Fine-tuning:<img width="594" alt="Screenshot 2023-07-29 at 6 05 55 PM" src="https://github.com/MayaAmelieSeale/Monkey_Species_Image_Classification/assets/140470683/c89bb5c5-78e7-499c-be91-14d18ad7842b">
+### First iteration, without fine-tuning the pre-trained model:
+<img width="437" alt="Screenshot 2023-07-29 at 6 05 31 PM" src="https://github.com/MayaAmelieSeale/Monkey_Species_Image_Classification/assets/140470683/a2c03b9c-f5c9-417f-be41-774744881dfc">
+### After Fine-tuning:
+<img width="594" alt="Screenshot 2023-07-29 at 6 05 55 PM" src="https://github.com/MayaAmelieSeale/Monkey_Species_Image_Classification/assets/140470683/c89bb5c5-78e7-499c-be91-14d18ad7842b">
 ### Final Model:
 <img width="574" alt="Screenshot 2023-07-29 at 6 06 23 PM" src="https://github.com/MayaAmelieSeale/Monkey_Species_Image_Classification/assets/140470683/c56cdd54-1c35-4c00-aab6-5509b9ffb6eb">
 
