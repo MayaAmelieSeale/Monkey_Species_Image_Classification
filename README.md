@@ -4,23 +4,31 @@ Classifying Images of Monkeys by Species - Finetuned CNN and Vision Transformer 
 I  used three different approaches to classify 10 species of Monkeys Species dataset, with a CNN model based on EfficientNet with finetuning achieving 100% accuracy on the test set. For this project, I have used 10 Monkey Species Dataset hosted on kaggle, which consists of 1369 colour images in 10 classes.
 
 Total Images = 1369
+
 Training Dataset = 1097
+
 Validation Dataset = 218
+
 Test Dataset (Unique data removed from the validation dataset) = 54
 
-Classes
-Mantled Howler
-Patas Monkey
-Bald Uakari
-Japanese Macaque
-Pygmy Marmoset
-White Headed Capuchin
-Silvery Marmoset
-Common Squirrel Monkey
-Black Headed Night Monkey
-Nilgiri Langur
+### Classes
 
-## Examples of Data (Silvery Marmoset is my favorite) 0
+The dataset is fairly balanced, meaning accuracy is a good metric 
+
+| Species Name              |   Number of Images |
+|-------------|-------------|
+| Mantled Howler            |     126 |
+| Patas Monkey              |     135 |
+| Bald Uakari               |     131 |
+| Japanese Macaque          |     147 |
+| Pygmy Marmoset            |     124 |
+| White Headed Capuchin     |     133 |
+| Silvery Marmoset          |     125 |
+| Common Squirrel Monkey    |     137 |
+| Black Headed Night Monkey |     129 |
+| Nilgiri Langur            |     122 |
+
+## Examples of Data (Silvery Marmoset is my favorite) 
 
 <img width="646" alt="Screenshot 2023-11-07 at 6 06 34 PM" src="https://github.com/MayaAmelieSeale/Monkey_Species_Image_Classification/assets/140470683/d19168fc-86af-4ff2-b3ae-b4dca1b8860d">
 
@@ -30,6 +38,9 @@ Nilgiri Langur
 
 
 ## Approaches
+
+All models used SparseCategoricalCrossentropy as a loss function, which was determined to be the best performing loss function. 
+
 1. Pre-trained Convolutional Neural Network
    
    a. MobileNetv2 - With and without finetuning
