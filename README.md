@@ -1,7 +1,7 @@
 # Monkey_Species_Image_Classification
 Classifying Images of Monkeys by Species - Finetuned CNN and Vision Transformer approaches
 
-I used three different approaches to classify 10 species of Monkeys Species dataset.  CNN model based on EfficientNet with finetuning achieving 100% accuracy on the test set. For this project, I have used 10 Monkey Species Dataset hosted on kaggle, which consists of 1369 colour images in 10 classes.
+I used three different approaches to classify 10 species of Monkeys Species dataset. The best model was a CNN model based on EfficientNet with finetuning that achieved 100% accuracy on the test set. For this project, I have used 10 Monkey Species Dataset hosted on kaggle, which consists of 1369 colour images in 10 classes.
 
 Total Images = 1369
 
