@@ -41,11 +41,11 @@ Eval time refers to the time taken to make and evaluate predictions on the test 
 
 | Model              |  Finetuned? | Train Accuracy (%)  |  Test Accuracy (%) | F1 Score (Test) | Eval Time (seconds)
 |-------------|-------------| ------ | ----- |  ----- | ----- | 
-| MobileNetV3 - Large     |     No | .842 | .90 | .798 | 3 
-| MobileNetV3 - Large |     Yes | .992 | .967 | 1.0 | 3
-| EfficientNet   |     No | .939 | .917 | .924 | 3
-| EfficientNet   |     Yes | 1.00 | 1.00 | .909 | 3 
-| Vision Transformer** | N/A |   | 23.3% | 
+| MobileNetV3 - Large     |     No | 84.2 | 90.0 | .798 | 3 
+| MobileNetV3 - Large |     Yes | 99.2 | 96.7 | 1.0 | 3
+| EfficientNet   |     No | 93.9 | 91.7 | .924 | 3
+| EfficientNet   |     Yes | 100.0 | 100.0 | .909 | 3 
+| Vision Transformer** | N/A |   | 23.3 | 
 
 **Model needs improvement
 
