@@ -13,7 +13,7 @@ Test Dataset (Unique data removed from the validation dataset) = 54
 
 ### Classes
 
-The dataset is fairly balanced, meaning accuracy is a good metric 
+The dataset is fairly balanced, supporting the use of accuracy as a performance metric  
 
 | Species Name              |   Number of Images |
 |-------------|-------------|
